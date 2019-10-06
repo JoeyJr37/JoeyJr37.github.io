@@ -1,60 +1,58 @@
 <!DOCTYPE html>
-<html>
+
+<!-- Not sure if this "lang= "en" is always necessary. Double check best practices -->
+<html lang="en">
+
   <head>
-    <title>Startup</title>
+    <!-- Not sure why this is necessary as well. More research needed. -->
+    <meta charset ="utf-8">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <!-- This is necessary for every web page. Sets the width of the page to follow
+    the screen-width of the device-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Note that the below Bootstrap file is a specific version. If you grab the most
-    current from Bootstrap website, you will see the button grow transition being a lot faster
-    than in my video. Use whichever style sheet you like best! -->
-    <!-- Bootstrap CSS from a CDN. This way you don't have to include the bootstrap file yourself -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 
-    <!-- My own stylesheet -->
-    <link href="style.css" rel="stylesheet">
+    <!-- Provides a file reference to an image that serves as a tab icon within the browser.
+    Need to research this more. -->
+    <link rel= "icon" type= "image/png" href=#>
+    <title>
+      Default HTML Skeleton
+    </title>
   </head>
   <body>
-    <header class="startup text-center text-white d-flex">
-      <div class="container my-auto">
-        <div class="row">
-          <div class="col-lg-12 my-auto">
-            <h1 class="text-uppercase faded">
-              <strong>the biggest startup event of the year</strong>
-            </h1>
-            <hr>
-          </div>
-          <div class="col-lg-12 my-auto">
-            <!-- Begin Mailchimp Signup Form -->
-<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-	#mc_embed_signup{ clear:left; font:14px Helvetica,Arial,sans-serif; }
-	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-</style>
-<div id="mc_embed_signup">
-<form action="https://gmail.us20.list-manage.com/subscribe/post?u=21990c2f7b317cbb9d38e0c64&amp;id=84c5741185" method="post" 
-id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <div id="mc_embed_signup_scroll">
-</div>	<div id="mce-responses" class="clear">
-		<div class="response" id="mce-error-response" style="display:none"></div>
-		<div class="response" id="mce-success-response" style="display:none"></div>
-	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_21990c2f7b317cbb9d38e0c64_84c5741185" 
-      tabindex="-1" value=""></div>
-    <div class="clear"><button class="btn btn-primary btn-xl" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" 
-      class="button">Find Out More</button></div>
-    </div>
-</form>
-</div>
 
-<!--End mc_embed_signup-->
-          </div>
-        </div>
-      </div>
+    <!-- Can be used multiple times within various elements, contains top-level elements,
+    or rather the more important elements within its parent container (body).-->
+    <header>
+
+      <!-- Contains all navigation-related elements. Usually at the top of the page.-->
+      <nav></nav>
     </header>
 
-  </body>
+    <!-- "Main" element tag encloses all the page's main content. Should only be used
+    once on each web page. -->
+    <main>
+      <!-- The seciont element groups all its child elements into a section. Imagine it's like
+      a chapter in a book. Each section container also requires a header <h*> tag-->
+      <section><header></header>
+        
+        <!-- The article element also requires a header tag. This element acts as a container
+        for information which can stand alone by itself and make complete sense. Mostly seen
+      as independent blog posts, stand-alone topics or news stories. -->
+        <article><header></header>
 
+        </article>
+      </section>
+      <!-- The figure element tag will typically be used to wrap around illustration, images, 
+      photos, etc. -->
+      <figure>
+        <figcaption></figcaption>
+      </figure>
+
+
+    </main>
+    <footer></footer>
+  </body>
 </html>
